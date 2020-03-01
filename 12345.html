@@ -11,23 +11,18 @@
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene  arjs="sourceType: webcam; debugUIEnabled: false;">
 
-        <a-assets>
-            <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
-        </a-assets>
+        <a-cylinder src="https://i.imgur.com/SyK6yig.png" radius="1" height="5"></a-cylinder>
 
-        <a-marker type='barcode' value='7'>
-            <a-box position='0 0.5 0' color="yellow"></a-box>
-        </a-marker>
+    <a-cylinder color="#3a3a3c" radius="0.95" height="5.08"></a-cylinder>
+    <a-cylinder color="lightblue" radius="0.29" height="5.16"></a-cylinder>
+    <a-cylinder color="white" radius="0.2" height="5.12"></a-cylinder>
 
-        <a-marker id="animated-marker" type='barcode' value='6'>
-            <a-entity
-                animation-mixer
-                gltf-model="#animated-asset"
-                scale="2 2 2">
-            </a-entity>
-        </a-marker>
+    <!-- <a-sphere src="https://media-exp1.licdn.com/dms/image/C5603AQHNyExG3uE-gg/profile-displayphoto-shrink_800_800/0?e=1588809600&v=beta&t=GEjp1SxCJ7LKkKO9dVA7ZygQHV8LNeiOO4b9ypwmr6U" radius="1" height="10"></a-sphere> -->
 
-        <a-entity camera></a-entity>
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+
+        
         </a-scene>
     </body>
 </html>
