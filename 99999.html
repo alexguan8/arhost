@@ -1,0 +1,15 @@
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+    <a-gltf-model src="https://brianchirls.github.io/aframe-test/assets/duck/Duck.gltf"></a-gltf-model>
+
+    <!-- <a-prism src="https://i.imgur.com/j4z1rNM.jpg" radius="0.95" height="5.08"></a-prism> -->
+
+
+    <!-- <a-sphere src="https://media-exp1.licdn.com/dms/image/C5603AQHNyExG3uE-gg/profile-displayphoto-shrink_800_800/0?e=1588809600&v=beta&t=GEjp1SxCJ7LKkKO9dVA7ZygQHV8LNeiOO4b9ypwmr6U" radius="1" height="10"></a-sphere> -->
+
+		<a-marker-camera preset='hiro'></a-marker-camera>
+  </a-scene>
+  </body>
